@@ -1,19 +1,17 @@
 import React from 'react';
 import './global.css';
 import './App.css';
-import Hero from './components/Hero/Hero';
-import {HERO} from './data/hero';
-import EducationTimeline from './components/EducationTimeline/EducationTimeline';
+import HeroSection from './section/HeroSection';
+import EducationTimelineSection from './section/EducationTimelineSection';
+import FooterSection from './section/FooterSection';
 
 const App: React.FC = () => {
   return (
   <div className="AppRoot">
-      <Hero />
+      <HeroSection />
       <div className="AppBelow">
-        <EducationTimeline />
-        <footer className="AppFooter">
-          © {new Date().getFullYear()} • {HERO.name}
-        </footer>
+        <EducationTimelineSection />
+        <FooterSection />
       </div>
     </div>
   );
