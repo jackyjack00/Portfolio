@@ -1,0 +1,12 @@
+.Hero { height:100vh; display:grid; place-items:center; padding:0 1.5rem; position:relative; }
+.Hero-links { position:absolute; top:1rem; right:1rem; display:flex; gap:.5rem; }
+.Hero-socialBtn { display:inline-flex; height:2.25rem; width:2.25rem; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.3); background:rgba(0,0,0,0.2); backdrop-filter: blur(6px); border-radius:999px; color:inherit; text-decoration:none; transition: background .25s; }
+.Hero-socialBtn:hover { background: rgba(255,255,255,0.1); }
+.Hero-socialBtn:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
+.Hero-icon { height:1.25rem; width:1.25rem; }
+.Hero-center { text-align:center; }
+.Hero-name { font-size:clamp(3rem, 6vw, 4.5rem); letter-spacing:-.03em; font-weight:600; margin:0; }
+.Hero-roles { margin-top:1rem; font-size:clamp(1.25rem, 3vw, 2rem); line-height:1.4; font-weight:500; display:inline-flex; align-items:center; }
+.Hero-typeText { opacity:.9; }
+.Hero-caret { width:2px; height:28px; background: currentColor; margin-left:4px; transform: translateY(3px); opacity:0; transition: opacity .25s; }
+.Hero-caret.is-visible { opacity:1; }

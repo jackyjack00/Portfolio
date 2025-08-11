@@ -1,0 +1,55 @@
+/* Global design tokens */
+:root {
+  /* Color palette */
+  --color-bg: #1a1a1a;
+  --color-cont-bg-dark: #1e1e1e;
+  --color-cont-bg-light: #252526;
+  --color-pri: #569cd6;
+  --color-pri-hov: #3794ff;
+  --color-head: #d4d4d4;
+  --color-text: #8f8f94;
+  --shadow-light: #0006;
+  /* Spacing scale */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.25rem;
+  --space-xl: 1.75rem;
+  --space-xxl: 2.5rem;
+  /* Typography scale */
+  --font-xxs: 0.625rem;
+  --font-xs: 0.75rem;
+  --font-s: 0.875rem;
+  --font-m: 1rem;
+  --font-l: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
+  /* Lightness */
+  --light-high: 100%;
+  --light-med: 80%;
+  --light-low: 60%;
+  --light-dim: 40%;
+  --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-head);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+button { font-family: inherit; }
+
+/* Utility classes */
+.text-dim { color: var(--color-text); }
+.border-faint { border-color: rgba(255,255,255,0.15); }
+
+/* Scroll snapping container helpers */
+.snap-y { scroll-snap-type: y mandatory; }
+.snap-start { scroll-snap-align: start; }
