@@ -66,5 +66,6 @@ button { font-family: inherit; }
 .border-faint { border-color: var(--color-text); }
 
 /* Scroll snapping container helpers */
-.snap-y { scroll-snap-type: y mandatory; }
+/* Soft vertical scroll snapping (less rigid than mandatory) */
+.snap-y { scroll-snap-type: y proximity; scroll-behavior:smooth; }
 .snap-start { scroll-snap-align: start; }

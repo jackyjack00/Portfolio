@@ -6,7 +6,7 @@ import './Hero.css';
 import { HERO } from '../../data/hero';
 
 export const Hero: React.FC = () => {
-  const { text, blink } = useTypewriter(HERO.roles, { typingSpeed: 65, deletingSpeed: 35, pauseMs: 250 });
+  const { text, blink } = useTypewriter(HERO.roles, { typingSpeed: 65, deletingSpeed: 50, pauseMs: 1000 });
 
   return (
     <main className="Hero snap-start">

@@ -1,4 +1,4 @@
-.AppRoot { position:relative; height:100vh; overflow-y:auto; overflow-x:hidden; color:var(--color-head); scroll-snap-type: y mandatory; }
+.AppRoot { position:relative; height:100vh; overflow-y:auto; overflow-x:hidden; color:var(--color-head); /* soften snap */ scroll-snap-type: y proximity; scroll-behavior:smooth; }
 .AppRoot::before {
 	content: "";
 	position: fixed;
