@@ -1,0 +1,9 @@
+/* Styles specific to the EducationCard component */
+.EduTimeline-card { width:100%; text-align:left; position:relative; z-index:20; border:1px solid rgba(255,255,255,.15); background: var(--color-fg); backdrop-filter: blur(6px); padding:var(--space-l); border-radius:1rem; cursor:pointer; color:inherit; transition: border-color .25s, background .25s; }
+.EduTimeline-card:hover { background: var(--color-fg-light); }
+.EduTimeline-card:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
+.EduTimeline-cardTitle { font-size:var(--font-m); font-weight:600; margin:0 0 var(--space-xxs); }
+.EduTimeline-cardSchool { font-size:var(--font-s); margin:0 0 var(--space-xs); opacity:.8; }
+.EduTimeline-cardDetails { font-size:var(--font-s); margin:0; opacity:.9; }
+.EduTimeline-cardExtra { margin-top:var(--space-s); font-size:var(--font-s); opacity:.9; overflow:hidden; }
+.EduTimeline-divider { height:1px; width:100%; background: rgba(255,255,255,0.15); margin:var(--space-xs) 0 var(--space-s); }

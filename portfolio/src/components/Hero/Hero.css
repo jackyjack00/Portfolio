@@ -5,8 +5,8 @@
 .Hero-socialBtn:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
 .Hero-icon { height:var(--font-l); width:var(--font-l); }
 .Hero-center { text-align:center; }
-.Hero-name { font-size:clamp(3rem, 6vw, 4.5rem); letter-spacing:-.03em; font-weight:600; margin:0; }
-.Hero-roles { margin-top:var(--space-m); font-size:clamp(1.25rem, 3vw, 2rem); line-height:1.4; font-weight:500; display:inline-flex; align-items:center; }
+.Hero-name { font-size:clamp(3rem, 6vw, 4.5rem); letter-spacing:-.03em; font-weight:600; margin:0; font-family: var(--font-display); }
+.Hero-roles { margin-top:var(--space-m); font-size:clamp(1.25rem, 3vw, 2rem); line-height:1.4; font-weight:500; display:inline-flex; align-items:center; font-family: var(--font-display);}
 .Hero-typeText { opacity:.9; }
 .Hero-caret { width:2px; height:28px; background: currentColor; margin-left:var(--space-xxs); transform: translateY(3px); opacity:0; transition: opacity .25s; }
 .Hero-caret.is-visible { opacity:1; }

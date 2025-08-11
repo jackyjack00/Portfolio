@@ -1,0 +1,23 @@
+[
+  {
+    "range": "2017–2020",
+    "title": "Diploma / Formazione iniziale (da definire)",
+    "school": "Scuola / Ente",
+    "details": "Fondamenti di programmazione e matematica.",
+    "extra": "Competenze: basi di Java/Python, matematica discreta, prime esperienze su progetti personali."
+  },
+  {
+    "range": "2020–2023",
+    "title": "Laurea / Programma (da definire)",
+    "school": "Istituto / Università",
+    "details": "Algoritmi, backend engineering, MLOps di base.",
+    "extra": "Esami chiave: Strutture dati, Sistemi Operativi, Reti, Basi di Dati, Ingegneria del Software. Tesi su ottimizzazione pipeline dati."
+  },
+  {
+    "range": "2023–2024",
+    "title": "Master / Corso avanzato (da definire)",
+    "school": "Istituto / Università",
+    "details": "Focus su AI/ML, sistemi distribuiti e data-intensive apps.",
+    "extra": "Programma: Deep Learning, NLP, sistemi distribuiti, laboratorio su microservizi e MLOps. Progetto finale su RAG e valutazione automatica."
+  }
+]

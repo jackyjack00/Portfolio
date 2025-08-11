@@ -3,20 +3,21 @@
 .EduTimeline-heading { font-size: clamp(1.75rem, 2.5vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; }
 .EduTimeline-subhead { margin-top: var(--space-s); font-size: var(--font-s); opacity: .8; }
 .EduTimeline-contentWrapper { position: relative; margin-top: 5rem; }
-.EduTimeline-axis { position: absolute; left: 50%; top:0; bottom:0; width:1px; transform: translateX(-50%); background: rgba(var(--color-head-rgb),0.25); }
+.EduTimeline-axis { position: absolute; left: 50%; top:0; bottom:0; width:var(--space-xs); transform: translateX(-50%); 
+  /* Fallback pieno */
+  background: var(--color-bg-light);
+  /* Gradient morbido (supporta override del fallback) */
+  background: linear-gradient(to bottom,
+    var(--color-bg-light) 0%,
+    var(--color-bg-light) 15%,
+    var(--color-bg-light) 85%,
+    var(--color-bg-light) 100%);
+  pointer-events:none;
+  z-index: var(--z-background);
+}
 .EduTimeline-list { list-style: none; margin:0; padding:0; display: flex; flex-direction: column; gap: 9rem; }
 .EduTimeline-row { position: relative; display: grid; grid-template-columns: 1fr 2.5rem 1fr; align-items: center; gap: 2rem; }
 
-.EduTimeline-datePill { display:inline-flex; align-items:center; font-size:var(--font-xs); padding:.125rem var(--space-xs); border:1px solid rgba(255,255,255,.2); border-radius: 999px; background: rgba(0,0,0,.3); backdrop-filter: blur(4px); white-space: nowrap; }
-
-.EduTimeline-card { width:100%; text-align:left; position:relative; z-index:20; border:1px solid rgba(255,255,255,.15); background: rgba(255,255,255,0.1); backdrop-filter: blur(6px); padding:var(--space-l); border-radius:1rem; cursor:pointer; color:inherit; transition: border-color .25s, background .25s; }
-.EduTimeline-card:hover { background: rgba(255,255,255,0.14); }
-.EduTimeline-card:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
-.EduTimeline-cardTitle { font-size:var(--font-m); font-weight:600; margin:0 0 var(--space-xxs); }
-.EduTimeline-cardSchool { font-size:var(--font-s); margin:0 0 var(--space-xs); opacity:.8; }
-.EduTimeline-cardDetails { font-size:var(--font-s); margin:0; opacity:.9; }
-.EduTimeline-cardExtra { margin-top:var(--space-s); font-size:var(--font-s); opacity:.9; overflow:hidden; }
-.EduTimeline-divider { height:1px; width:100%; background: rgba(255,255,255,0.15); margin:var(--space-xs) 0 var(--space-s); }
 
 .EduTimeline-dotCol { position:relative; display:flex; align-items:center; justify-content:center; }
 .EduTimeline-dotWrapper { display:inline-flex; align-items:center; justify-content:center; position:relative; z-index:10; }
@@ -35,7 +36,8 @@
 
 @media (max-width: 768px) {
   .EduTimeline-row { grid-template-columns: 1fr; gap:var(--space-m); }
-  .EduTimeline-axis { left:0; transform:none; }
+  /* Keep axis centered so it visually connects dots on mobile */
+  .EduTimeline-axis { left:50%; transform:translateX(-50%); }
   .EduTimeline-col-left,.EduTimeline-col-right { display:none; }
   .EduTimeline-dotCol { order:-1; }
   .EduTimeline-date-mobile { display:inline-flex; }

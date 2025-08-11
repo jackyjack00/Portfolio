@@ -4,11 +4,15 @@
   --color-bg: #5b21b6;
   --color-bg-dark: #170726;
   --color-bg-light: #a78bfa;
+
+  --color-fg-light: #ffffff24;
+  --color-fg: #ffffff1a;
+
   --color-pri: #569cd6;
   --color-pri-hov: #3794ff;
+
   --color-head: #d4d4d4;
   --color-text: #8f8f94;
-  --shadow-light: #0006;
 
   /* Spacing scale */
   --space-xxs: 0.25rem;

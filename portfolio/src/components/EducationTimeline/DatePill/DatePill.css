@@ -1,0 +1,12 @@
+/* Styles specific to the DatePill component */
+.EduTimeline-datePill { 
+    display:inline-flex; 
+    align-items:center; 
+    font-size:var(--font-s); 
+    padding:.125rem var(--space-xs); 
+    border:1px solid var(--color-bg); 
+    border-radius: 999px; 
+    background: #ffffff24;
+    backdrop-filter: blur(4px); 
+    white-space: nowrap; 
+}
