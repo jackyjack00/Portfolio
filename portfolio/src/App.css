@@ -1,0 +1,12 @@
+.AppRoot { position:relative; height:100vh; overflow-y:auto; overflow-x:hidden; color:var(--color-head); scroll-snap-type: y mandatory; }
+.AppRoot::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: var(--z-background);
+	pointer-events: none;
+	background-image:
+		radial-gradient(circle, var(--color-bg) 25%, var(--color-bg-dark) 95%);
+}
+.AppBelow { position:relative; z-index:10; }
+.AppFooter { padding:var(--space-xxl); text-align:center; font-size:var(--font-xs); opacity:0.6; }

@@ -1,14 +1,15 @@
 /* Global design tokens */
 :root {
   /* Color palette */
-  --color-bg: #1a1a1a;
-  --color-cont-bg-dark: #1e1e1e;
-  --color-cont-bg-light: #252526;
+  --color-bg: #5b21b6;
+  --color-bg-dark: #170726;
+  --color-bg-light: #a78bfa;
   --color-pri: #569cd6;
   --color-pri-hov: #3794ff;
   --color-head: #d4d4d4;
   --color-text: #8f8f94;
   --shadow-light: #0006;
+
   /* Spacing scale */
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
@@ -17,6 +18,12 @@
   --space-l: 1.25rem;
   --space-xl: 1.75rem;
   --space-xxl: 2.5rem;
+
+  /* z-index */
+  --z-background: -10;
+  --z-middle: 0;
+  --z-foreground: 10;
+
   /* Typography scale */
   --font-xxs: 0.625rem;
   --font-xs: 0.75rem;
@@ -25,11 +32,14 @@
   --font-l: 1.25rem;
   --font-xl: 1.5rem;
   --font-xxl: 2rem;
+
   /* Lightness */
   --light-high: 100%;
   --light-med: 80%;
   --light-low: 60%;
   --light-dim: 40%;
+
+  /* Font stack */
   --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
@@ -42,13 +52,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; }
 
 button { font-family: inherit; }
 
 /* Utility classes */
 .text-dim { color: var(--color-text); }
-.border-faint { border-color: rgba(255,255,255,0.15); }
+.border-faint { border-color: var(--color-text); }
 
 /* Scroll snapping container helpers */
 .snap-y { scroll-snap-type: y mandatory; }
