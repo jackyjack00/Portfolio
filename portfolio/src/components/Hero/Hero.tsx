@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
     <main className="Hero snap-start">
       <div className="Hero-links">
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/jackyjack00"
           target="_blank"
           rel="noreferrer"
           aria-label="GitHub"
