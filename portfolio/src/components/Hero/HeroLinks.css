@@ -1,5 +1,22 @@
 .HeroLinks-root { display:flex; gap:var(--space-s); }
-.HeroLinks-btn { display:inline-flex; height:2.25rem; width:2.25rem; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.3); background:rgba(0,0,0,0.2); backdrop-filter: blur(6px); border-radius:999px; color:inherit; text-decoration:none; transition: background .25s; }
-.HeroLinks-btn:hover { background: rgba(255,255,255,0.1); }
+.HeroLinks-btn { 
+    display:inline-flex; 
+    height:2.25rem; 
+    width:2.25rem; 
+    align-items:center; 
+    justify-content:center; 
+    border:1px solid var(--color-pri); 
+    background: var(--color-bg-dark); 
+    backdrop-filter: blur(6px); 
+    border-radius:999px; 
+    color:inherit; 
+    text-decoration:none; 
+    transition: background .25s; 
+}
+.HeroLinks-btn:hover { 
+    border: 1px solid var(--color-pri-hov); 
+    background: color-mix(in srgb, var(--color-bg-dark) 80%, var(--color-bg-light) 20%);
+}
 .HeroLinks-btn:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
-.HeroLinks-icon { height:var(--font-l); width:var(--font-l); }
+.HeroLinks-icon { height:var(--font-l); width:var(--font-l); color: var(--color-pri); fill: currentColor; }
+.HeroLinks-btn:hover .HeroLinks-icon { color: var(--color-pri-hov); }

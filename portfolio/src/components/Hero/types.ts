@@ -6,5 +6,5 @@ export interface Hero {
 export interface HeroLink {
   href: string;
   label: string;
-  icon: 'github' | 'linkedin';
+  svgIcon: React.FC<React.SVGProps<SVGSVGElement>>; // enriched ReactComponent for the SVG
 }

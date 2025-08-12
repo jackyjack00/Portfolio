@@ -1,34 +1,27 @@
 /* Global design tokens */
+
+/* Color palette */
 :root {
-  /* Color palette */
-  --color-bg: #5b21b6;
-  --color-bg-dark: #170726;
-  --color-bg-light: #a78bfa;
 
-  --color-fg-light: #ffffff24;
-  --color-fg: #ffffff1a;
+  --color-bg: hsl(180, 80%, 30%);         
+  --color-bg-dark: hsl(180, 80%, 0%);    
+  --color-bg-light: hsl(180, 80%, 70%);  
 
-  --color-pri: #569cd6;
-  --color-pri-hov: #3794ff;
+  --color-fg: hsl(180, 60%, 30%);    
+  --color-fg-light: hsl(180, 60%, 40%);    
 
-  --color-head: #d4d4d4;
-  --color-text: #8f8f94;
+  --color-pri: hsl(180, 80%, 70%);        
+  --color-pri-hov: hsl(180, 70%, 70%);
 
-  /* Spacing scale */
-  --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-s: 0.75rem;
-  --space-m: 1rem;
-  --space-l: 1.25rem;
-  --space-xl: 1.75rem;
-  --space-xxl: 2.5rem;
+  --color-head: hsl(180, 50%, 90%);   
+  --color-text: hsl(180, 50%, 90%);     
+}
 
-  /* z-index */
-  --z-background: -10;
-  --z-middle: 0;
-  --z-foreground: 10;
-
-  /* Typography scale */
+/* Typography */
+:root {
+  /* Font stack */
+  --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  /* Font scale */
   --font-xxs: 0.625rem;
   --font-xs: 0.75rem;
   --font-s: 0.875rem;
@@ -36,15 +29,31 @@
   --font-l: 1.25rem;
   --font-xl: 1.5rem;
   --font-xxl: 2rem;
+}
+
+/* Spacing scale */
+:root {
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.25rem;
+  --space-xl: 1.75rem;
+  --space-xxl: 2.5rem;
+}
+
+/* Miscellaneous */
+:root {
+  /* z-index */
+  --z-background: -10;
+  --z-middle: 0;
+  --z-foreground: 10;
 
   /* Lightness */
   --light-high: 100%;
   --light-med: 80%;
   --light-low: 60%;
   --light-dim: 40%;
-
-  /* Font stack */
-  --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 html, body, #root { height: 100%; }

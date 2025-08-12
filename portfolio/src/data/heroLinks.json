@@ -1,12 +1,12 @@
 [
-  {
+{
     "href": "https://github.com/jackyjack00",
     "label": "GitHub",
-    "icon": "github"
+    "iconPath": "./assets/icons/github.svg"
   },
   {
     "href": "https://www.linkedin.com/in/your-username",
     "label": "LinkedIn",
-    "icon": "linkedin"
+    "iconPath": "./assets/icons/linkedin.svg"
   }
 ]
