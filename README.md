@@ -1,3 +1,3 @@
 # Portfolio
 
-React Website to present myself
+React Website to present myself with a different name
