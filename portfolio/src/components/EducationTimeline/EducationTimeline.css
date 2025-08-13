@@ -5,13 +5,13 @@
 .EduTimeline-contentWrapper { position: relative; margin-top: 5rem; }
 .EduTimeline-axis { position: absolute; left: 50%; top:0; bottom:0; width:var(--space-xs); transform: translateX(-50%); 
   /* Fallback pieno */
-  background: var(--color-bg-light);
+  background: var(--color-pri);
   /* Gradient morbido (supporta override del fallback) */
   background: linear-gradient(to bottom,
-    var(--color-bg-light) 0%,
-    var(--color-bg-light) 15%,
-    var(--color-bg-light) 85%,
-    var(--color-bg-light) 100%);
+    var(--color-pri) 0%,
+    var(--color-pri) 15%,
+    var(--color-pri) 85%,
+    var(--color-pri) 100%);
   pointer-events:none;
   z-index: var(--z-background);
 }
@@ -37,7 +37,10 @@
 @media (max-width: 768px) {
   .EduTimeline-row { grid-template-columns: 1fr; gap:var(--space-m); }
   /* Keep axis centered so it visually connects dots on mobile */
-  .EduTimeline-axis { left:50%; transform:translateX(-50%); }
+  .EduTimeline-axis { 
+    left:50%; 
+    transform:translateX(-50%); 
+  }
   .EduTimeline-col-left,.EduTimeline-col-right { display:none; }
   .EduTimeline-dotCol { order:-1; }
   .EduTimeline-date-mobile { display:inline-flex; }

@@ -1,23 +1,30 @@
 [
   {
-    "range": "2017–2020",
-    "title": "Diploma / Formazione iniziale (da definire)",
-    "school": "Scuola / Ente",
-    "details": "Fondamenti di programmazione e matematica.",
-    "extra": "Competenze: basi di Java/Python, matematica discreta, prime esperienze su progetti personali."
+    "range": "_2015 – 2019_",
+    "title": "Diploma Liceo Scientifico",
+    "school": "Liceo Scientifico Galileo Ferraris",
+    "details": "Solide basi in materie scientifiche e umanistiche.",
+    "extra": "**Competenze principali:**\n\n- Fisica\n- Matematica\n- Esperienze di laboratorio\n- Inglese (**Certificazione B2**)\n\n**Esperienze Extracurricolari:**\n- Club di Programmazione e Robotica\n- Stage di laboratorio presso **INRiM** (Istituto Nazionale di Ricerca Metrologica).\n- Analisi dati di telescopi per rilevamento di muoni"
   },
   {
-    "range": "2020–2023",
-    "title": "Laurea / Programma (da definire)",
-    "school": "Istituto / Università",
-    "details": "Algoritmi, backend engineering, MLOps di base.",
-    "extra": "Esami chiave: Strutture dati, Sistemi Operativi, Reti, Basi di Dati, Ingegneria del Software. Tesi su ottimizzazione pipeline dati."
+    "range": "_2019 – 2022_",
+    "title": "Laurea in Software Engineering",
+    "school": "Politecnico di Torino",
+    "details": "Esperienza in sviluppo, ingegneria del software e matematica vanzata.",
+    "extra": "### Esami chiave\n- Programmazione e OS\n\t- _**C, Java, Python**_\n- Algoritmi e Strutture dati\n- Basi di Dati\n\t- _**SQL**, **NoSQL**_\n- Network e IoT\n\t- _**HTTP**, **WebSocket**, **Client-Server**, **API**_\n- Analisi, Geometria, Fisica e Statistica"
   },
   {
-    "range": "2023–2024",
-    "title": "Master / Corso avanzato (da definire)",
+    "range": "_2022 – 2024_",
+    "title": "University Research Group",
+    "school": "MALTO: Machine Learning at PoliTo",
+    "details": "Focus su ricerca e partecipazione a challenge europee in ambito AI",
+    "extra": "Progetto finale su RAG.\n\n| Modulo | Stack |\n| ------ | ----- |\n| NLP | Python, Transformers |\n| MLOps | Docker, FastAPI |\n\nPipeline con steps: `ingest` → `embed` → `retrieve` → `evaluate`.\n\nLista rapida:\n- Dataset pulizia\n- Fine-tuning leggero\n- Benchmark interno"
+  },
+  {
+    "range": "_2022 – 2024_",
+    "title": "Magistrale in Data Science & Artificial Intelligence",
     "school": "Istituto / Università",
     "details": "Focus su AI/ML, sistemi distribuiti e data-intensive apps.",
-    "extra": "Programma: Deep Learning, NLP, sistemi distribuiti, laboratorio su microservizi e MLOps. Progetto finale su RAG e valutazione automatica."
+    "extra": "1. Deep Learning\n2. NLP\n3. Sistemi distribuiti\n\n![Placeholder](https://via.placeholder.com/150)\n\n**Outcome:** prototipo di valutazione automatica con metriche personalizzate (es. *semantic similarity*).\n\nUlteriore codice:\n```js\nconst msg = 'Hello MD';\nconsole.log(msg);\n```"
   }
 ]

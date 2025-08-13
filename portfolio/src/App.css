@@ -1,4 +1,12 @@
-.AppRoot { position:relative; height:100vh; overflow-y:auto; overflow-x:hidden; color:var(--color-head); /* soften snap */ scroll-snap-type: y proximity; scroll-behavior:smooth; }
+.AppRoot { 
+	position:relative; 
+	height:100vh; 
+	overflow-y:auto; 
+	overflow-x:hidden; 
+	color:var(--color-head);
+	scroll-snap-type: y proximity; 
+	scroll-behavior:smooth; 
+}
 .AppRoot::before {
 	content: "";
 	position: fixed;
@@ -8,8 +16,5 @@
 	background-image:
 		radial-gradient(circle, var(--color-bg) 50%, var(--color-bg-dark) 100%);
 }
-
-
-
 .AppBelow { position:relative; z-index:10; }
 .AppFooter { padding:var(--space-xxl); text-align:center; font-size:var(--font-xs); opacity:0.6; }

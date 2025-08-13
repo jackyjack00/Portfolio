@@ -3,18 +3,19 @@
 /* Color palette */
 :root {
 
-  --color-bg: hsl(180, 80%, 30%);         
-  --color-bg-dark: hsl(180, 80%, 0%);    
-  --color-bg-light: hsl(180, 80%, 70%);  
+  --color-bg: hsl(205, 86%, 19%);         
+  --color-bg-dark: hsl(from var(--color-bg) h s calc( l - 20) ); 
+  --color-bg-light: hsl(from var(--color-bg) h s calc( l + 40) );
 
-  --color-fg: hsl(180, 60%, 30%);    
-  --color-fg-light: hsl(180, 60%, 40%);    
+  --color-fg: hsl( from var(--color-bg) h calc( s - 20) l );    
+  --color-fg-dark: hsl(from var(--color-fg) h s calc( l - 20) ); 
+  --color-fg-light: hsl(from var(--color-fg) h s calc( l + 20) );   
 
-  --color-pri: hsl(180, 80%, 70%);        
-  --color-pri-hov: hsl(180, 70%, 70%);
+  --color-pri: hsl(from var(--color-fg) h s calc( l + 40) );        
+  --color-pri-hov: hsl( from var(--color-pri) h calc(s - 10) l );
 
-  --color-head: hsl(180, 50%, 90%);   
-  --color-text: hsl(180, 50%, 90%);     
+  --color-text: hsl( from var(--color-bg) h 50% 90% );     
+  --color-head: hsl( from var(--color-bg) h 50% 95% );  
 }
 
 /* Typography */

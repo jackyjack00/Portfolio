@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './EducationCard.css';
 import { ToggleableCardProps } from '../types';
+import { markdownToHtml } from '../../../utils/utils';
 
 // A single education card with expandable extra content.
 export const EducationCard: React.FC<ToggleableCardProps> = ({ item, index, openIndex, onToggle }) => {
   const expanded = openIndex === index;
+  const extraHtml = useMemo(() => markdownToHtml(item.extra || ''), [item.extra]);
+
   return (
     <button
       type="button"
@@ -29,7 +32,11 @@ export const EducationCard: React.FC<ToggleableCardProps> = ({ item, index, open
             className="EduTimeline-cardExtra"
           >
             <div className="EduTimeline-divider" />
-            <p>{item.extra}</p>
+            <div
+              className="EduTimeline-cardExtraContent"
+              // Markdown already converted to HTML; ensure source is trusted or sanitize beforehand.
+              dangerouslySetInnerHTML={{ __html: extraHtml }}
+            />
           </motion.div>
         )}
       </AnimatePresence>
