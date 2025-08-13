@@ -49,6 +49,8 @@ export const EducationTimeline: React.FC = () => {
                     className="EduTimeline-dotButton"
                   />
                 </motion.span>
+                {/* Date pill visualizzata solo su layout mobile via CSS */}
+                <DatePill range={item.range} />
               </div>
               <div className="EduTimeline-col-right">
                 {!left ? (

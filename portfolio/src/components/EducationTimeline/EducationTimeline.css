@@ -15,7 +15,7 @@
   pointer-events:none;
   z-index: var(--z-background);
 }
-.EduTimeline-list { list-style: none; margin:0; padding:0; display: flex; flex-direction: column; gap: 9rem; }
+.EduTimeline-list { list-style: none; margin:0; padding:0; display: flex; flex-direction: column; gap: calc(var(--space-xxl)*2); }
 .EduTimeline-row { 
   position: relative; 
   display: grid; 
@@ -24,6 +24,7 @@
   gap: 2rem; 
 }
 .EduTimeline-dotCol { position:relative; display:flex; align-items:center; justify-content:center; }
+.EduTimeline-dotCol .EduTimeline-datePill {display: none}
 .EduTimeline-dotWrapper { display:inline-flex; align-items:center; justify-content:center; position:relative; z-index:10; }
 .EduTimeline-dotButton { height:1.5rem; width:1.5rem; border-radius:999px; background:#fff; box-shadow:0 0 0 8px rgba(255,255,255,0.15); border:none; cursor:pointer; }
 .EduTimeline-dotButton:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
@@ -35,19 +36,48 @@
 
 /* Responsive: layout verticale su schermi stretti */
 @media (max-width: 800px) {
+  
   .EduTimeline-row { 
-    grid-template-columns: 1fr; 
-    gap: 0rem; 
+    grid-template-areas:
+      "a b";
+    grid-template-columns: 1fr 4fr;
+    gap: var(--space-m);
   }
   .EduTimeline-col-left, 
   .EduTimeline-col-right,
   .EduTimeline-dotCol { 
     grid-column: 1; 
-    justify-content: center; 
+    justify-content: space-around; 
     padding: 0; 
   }
-  /* Nascondi i DatePill laterali */
-  .EduTimeline-col-left .EduTimeline-datePill,
-  .EduTimeline-col-right .EduTimeline-datePill { display:none; }
-  .EduTimeline-dotWrapper { display:none; }
+  /* Colonna dot + DatePill reale (spostata qui) */
+  .EduTimeline-dotCol { 
+    grid-area: a; 
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    justify-content:center; 
+    padding:0; 
+  }
+  /* Riduci alone del dot per spazi ridotti */
+  .EduTimeline-dotButton { box-shadow:0 0 0 4px rgba(255,255,255,0.15); }
+  .EduTimeline-dotWrapper { display:flex; }
+
+  /* Mostra la DatePill soltanto dentro la dotCol su mobile */
+  .EduTimeline-dotCol .EduTimeline-datePill { 
+    display:inline-flex !important;  
+  }
+  /* Nascondi quelle laterali (nei wrapper left/right) */
+  .EduTimeline-col-left > .EduTimeline-datePill,
+  .EduTimeline-col-right > .EduTimeline-datePill { display:none !important; }
+
+  /* Sposta sempre la card nella seconda colonna (destra) */
+  .EduTimeline-col-left:has(.EduTimeline-card) { grid-area:b; padding:0; }
+  .EduTimeline-col-right:has(.EduTimeline-card) { grid-area:b; padding:0; }
+
+  /* Nascondi colonne che contengono solo una DatePill (ora vuote) */
+  .EduTimeline-col-left:has(> .EduTimeline-datePill) { display:none; }
+  .EduTimeline-col-right:has(> .EduTimeline-datePill) { display:none; }
+
+
 }
