@@ -33,5 +33,21 @@
 .EduTimeline-col-left { justify-content:flex-end; padding-right:var(--space-s); }
 .EduTimeline-col-right { justify-content:flex-start; padding-left:var(--space-s); }
 
-
-
+/* Responsive: layout verticale su schermi stretti */
+@media (max-width: 800px) {
+  .EduTimeline-row { 
+    grid-template-columns: 1fr; 
+    gap: 0rem; 
+  }
+  .EduTimeline-col-left, 
+  .EduTimeline-col-right,
+  .EduTimeline-dotCol { 
+    grid-column: 1; 
+    justify-content: center; 
+    padding: 0; 
+  }
+  /* Nascondi i DatePill laterali */
+  .EduTimeline-col-left .EduTimeline-datePill,
+  .EduTimeline-col-right .EduTimeline-datePill { display:none; }
+  .EduTimeline-dotWrapper { display:none; }
+}

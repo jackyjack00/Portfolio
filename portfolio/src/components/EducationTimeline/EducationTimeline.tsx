@@ -33,7 +33,7 @@ export const EducationTimeline: React.FC = () => {
                   <DatePill range={item.range} />
                 )}
               </div>
-              <div className="EduTimeline-dotCol">
+              <div className="EduTimeline-dotCol" data-range={item.range}>
                 <motion.span
                   className="EduTimeline-dotWrapper"
                   initial={{ scale: 0.6, opacity: 0.6 }}
