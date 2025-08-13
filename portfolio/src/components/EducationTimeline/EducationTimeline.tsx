@@ -49,7 +49,6 @@ export const EducationTimeline: React.FC = () => {
                     className="EduTimeline-dotButton"
                   />
                 </motion.span>
-                <span className="EduTimeline-date-mobile">{item.range}</span>
               </div>
               <div className="EduTimeline-col-right">
                 {!left ? (
@@ -57,9 +56,6 @@ export const EducationTimeline: React.FC = () => {
                 ) : (
                   <DatePill range={item.range} />
                 )}
-              </div>
-              <div className="EduTimeline-card-mobile">
-                <EducationCard item={item} index={idx} openIndex={open} onToggle={toggle} />
               </div>
             </motion.li>
           );
