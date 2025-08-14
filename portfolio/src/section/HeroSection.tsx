@@ -16,10 +16,11 @@ const HeroSection: React.FC = () => {
   return (
     <section id="hero" className="Hero HeroSection-root snap-start">
       <HeroBackground />
-      <div className="HeroSection-links">
+      
+      <div className="HeroSection-center">
+        <div className="HeroSection-links">
         <HeroLinks links={HERO_LINKS} />
       </div>
-      <div className="HeroSection-center">
         <Hero />
       </div>
       <div className="HeroSection-scrollCue">
