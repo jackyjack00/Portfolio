@@ -8,17 +8,37 @@
     background: var(--color-fg); 
     backdrop-filter: blur(6px); 
     padding:var(--space-l); 
+    /* Extra bottom padding to make room for the arrow indicator */
+    padding-bottom: calc(var(--space-xl) + 14px);
     border-radius:1rem; 
     cursor:pointer; 
     color:inherit; 
     transition: border-color .25s, background .25s; 
     box-shadow: 0px 0px 4px var(--color-fg-light), 0px 0px 12px var(--color-fg-dark);
 }
+.EduTimeline-card::after {
+    /* Small down-arrow caret centered at the bottom */
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    width: 0; height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid currentColor;
+    opacity: .7;
+    pointer-events: none;
+    transition: transform .2s ease, opacity .2s ease;
+}
 .EduTimeline-card:hover { 
     background: var(--color-fg-light);  
     box-shadow: 0px 0px 24px var(--color-fg-light), 0px 0px 48px var(--color-fg-dark);
 }
+.EduTimeline-card:hover::after { opacity: .95; transform: translateX(-50%) translateY(1px); }
 .EduTimeline-card:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
+.EduTimeline-card[aria-expanded="true"]::after { transform: translateX(-50%) rotate(180deg); }
+.EduTimeline-card[aria-expanded="true"]:hover::after { transform: translateX(-50%) rotate(180deg) translateY(1px); }
 .EduTimeline-cardTitle { font-size:var(--font-l); font-weight:600; margin:0 0 var(--space-xxs); }
 .EduTimeline-cardSchool { font-size:var(--font-s); margin:0 0 var(--space-xs); opacity:.8; }
 .EduTimeline-cardDetails { font-size:var(--font-m); margin:0; opacity:.9; }
