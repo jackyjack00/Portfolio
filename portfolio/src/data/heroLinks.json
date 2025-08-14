@@ -1,12 +1,17 @@
 [
-{
-    "href": "https://github.com/jackyjack00",
-    "label": "GitHub",
-    "iconPath": "./assets/icons/github.svg"
-  },
   {
     "href": "https://www.linkedin.com/in/giacomo-rosso-735b402ab/",
     "label": "LinkedIn",
     "iconPath": "./assets/icons/linkedin.svg"
+  },
+  {
+    "href": "https://www.instagram.com/jacky_jack_00/",
+    "label": "Instagram",
+    "iconPath": "./assets/icons/instagram.svg"
+  },
+  {
+    "href": "https://github.com/jackyjack00",
+    "label": "GitHub",
+    "iconPath": "./assets/icons/github.svg"
   }
 ]
