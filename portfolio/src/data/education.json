@@ -23,8 +23,8 @@
   {
     "range": "_2022 – 2024_",
     "title": "Magistrale in Data Science & Artificial Intelligence",
-    "school": "Istituto / Università",
-    "details": "Focus su AI/ML, sistemi distribuiti e data-intensive apps.",
+    "school": "Politecnico di Torino",
+    "details": "Esperienza in Intelligenza Artificiale, Machine Learning e Data Science.",
     "extra": "### Esami Chiave\n- Data Science and Visualization\n\t- _**Pandas, Numpy, Scikit-learn**_\n- Machine Learning\n\t- _**Decision Trees, Random Forest, SVM, Clustering, Classification**_\n- Deep Learning\n\t- _**Neural Networks, CNNs, Transformers**_\n- Natural Language Processing\n\t- _**NLTK, SpaCy, Transformers, Hugging Face**_\n### Progetti\n- Modifica architetturale e finetuning tramite Masked Language Modeling di un modello BERT-like su domini e lingue differenti\n\n- Architettura CNN allenata tramite Contrastive Learning per Visual Place Recognition\n\n- Modifica architetturale di un Transformer per l'analisi di sequenze temporali di agenti inquinanti per il forcasting degli stessi sull'area geografica di Milano"
   }
 ]
