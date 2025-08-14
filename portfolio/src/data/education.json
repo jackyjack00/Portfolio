@@ -11,7 +11,7 @@
     "title": "Laurea in Software Engineering",
     "school": "Politecnico di Torino",
     "details": "Esperienza in sviluppo, ingegneria del software e matematica vanzata.",
-    "extra": "### Esami chiave\n- Programmazione e OS\n\t- _**C, Java, Python**_\n- Algoritmi e Strutture dati\n- Basi di Dati\n\t- _**SQL**, **NoSQL**_\n- Network e IoT\n\t- _**HTTP**, **WebSocket**, **Client-Server**, **API**_\n- Analisi, Geometria, Fisica e Statistica"
+    "extra": "### Esami chiave\n- Programmazione e OS\n\t- _**C, Java, Python**_\n- Algoritmi e Strutture dati\n\t - _**Ricorsione, Grafi, Complessità Asintotica**_\n- Basi di Dati\n\t- _**SQL**, **NoSQL**_\n- Network e IoT\n\t- _**HTTP**, **WebSocket**, **Client-Server**, **API**_\n- Analisi, Geometria, Fisica e Statistica"
   },
   {
     "range": "_2022 – 2024_",
