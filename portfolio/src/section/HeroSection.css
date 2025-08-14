@@ -8,7 +8,7 @@
 /* Bottom scroll cue */
 .HeroSection-scrollCue { 
     position:absolute; 
-    bottom: 12rem; 
+    bottom: 10vh; 
     left:0;
     right:0; 
     display:flex; 
@@ -17,6 +17,8 @@
 }
 .HeroSection-scrollLink { 
 	display:inline-flex; align-items:center; gap: .5rem; 
+    height: 4vh;
+    width: fit-content;
 	color: var(--color-text); text-decoration:none; 
 	background: color-mix(in oklab, var(--color-bg-light), transparent 70%);
 	padding: .5rem .75rem; border-radius: 999px; 
