@@ -17,6 +17,26 @@
 	background-image:
 		radial-gradient(circle, var(--color-bg) 50%, var(--color-bg-dark) 100%);
 }
+
+:root {
+	/* Background pattern */
+	--grid-size: 12px;                /* distance between grid lines */
+	--dot-size: .8px;                  /* dot diameter */
+	--pattern-opacity: 0.14;          /* overall intensity */
+	--pattern-grid: transparent; 	  /* grid color */
+	--pattern-dots: var(--color-pri-hov);  /* dot color */
+	--z-background-pattern: -9;       /* sits above vignette, below content */
+}
+
+@media (max-width: 768px) {
+	:root{
+		--grid-size: 10px;                /* distance between grid lines */
+		--dot-size: .5px;                 /* dot diameter */
+		--pattern-opacity: 0.12;          /* overall intensity */
+		--pattern-grid: transparent; 	  /* grid color */
+	}
+}
+
 .AppRoot::after {
 	/* Subtle AI grid + dots pattern */
 	content: "";

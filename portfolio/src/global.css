@@ -55,14 +55,6 @@
   --light-med: 80%;
   --light-low: 60%;
   --light-dim: 40%;
-
-  /* Background pattern */
-  --grid-size: 15px;                /* distance between grid lines */
-  --dot-size: 1px;                  /* dot diameter */
-  --pattern-opacity: 0.14;          /* overall intensity */
-  --pattern-grid: transparent;
-  --pattern-dots: var(--color-pri-hov);
-  --z-background-pattern: -9;       /* sits above vignette, below content */
 }
 
 html, body, #root { height: 100%; }
