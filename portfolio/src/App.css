@@ -17,4 +17,3 @@
 		radial-gradient(circle, var(--color-bg) 50%, var(--color-bg-dark) 100%);
 }
 .AppBelow { position:relative; z-index:10; }
-.AppFooter { padding:var(--space-xxl); text-align:center; font-size:var(--font-xs); opacity:0.6; }

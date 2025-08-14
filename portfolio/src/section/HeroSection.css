@@ -1,0 +1,2 @@
+.HeroSection-root { position:relative; display:grid; place-items:center; height:100vh; }
+.HeroSection-links { position:absolute; top:var(--space-m); right:var(--space-m); }

@@ -1,6 +1,8 @@
 import React from 'react';
 import EducationTimeline from '../components/EducationTimeline/EducationTimeline';
 
+import './EducationSection.css';
+
 const EducationTimelineSection: React.FC = () => {
   return (
     <section id="formazione" className="EduTimeline-section snap-start">

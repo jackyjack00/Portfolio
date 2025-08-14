@@ -1,6 +1,8 @@
 import React from 'react';
 import { HERO } from '../data/hero';
 
+import './FooterSection.css'
+
 const FooterSection: React.FC = () => {
   return (
     <footer className="AppFooter" id="footer">

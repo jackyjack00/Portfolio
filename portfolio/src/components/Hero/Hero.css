@@ -15,6 +15,4 @@
 .Hero-caret { width:2px; height:28px; background: currentColor; margin-left:var(--space-xxs); transform: translateY(3px); opacity:0; transition: opacity .25s; }
 .Hero-caret.is-visible { opacity:1; }
 
-/* Section layout wrapper (used by HeroSection) */
-.HeroSection-root { position:relative; display:grid; place-items:center; height:100vh; }
-.HeroSection-links { position:absolute; top:var(--space-m); right:var(--space-m); }
+

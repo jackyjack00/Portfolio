@@ -3,11 +3,13 @@ import Hero from '../components/Hero/Hero';
 import HeroLinks from '../components/Hero/HeroLinks';
 import { HERO_LINKS } from '../data/heroLinks';
 
+import './HeroSection.css'
+
 const HeroSection: React.FC = () => {
   return (
     <section id="hero" className="Hero HeroSection-root snap-start">
       <div className="HeroSection-links">
-  <HeroLinks links={HERO_LINKS} />
+        <HeroLinks links={HERO_LINKS} />
       </div>
       <Hero />
     </section>
