@@ -17,4 +17,36 @@
 	background-image:
 		radial-gradient(circle, var(--color-bg) 50%, var(--color-bg-dark) 100%);
 }
+.AppRoot::after {
+	/* Subtle AI grid + dots pattern */
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: var(--z-background-pattern);
+	pointer-events: none;
+	background-image:
+		/* grid: thin lines */
+		linear-gradient(
+			to right,
+			color-mix(in oklab, transparent, var(--pattern-grid) 100%) 1px,
+			transparent 1px
+		),
+		linear-gradient(
+			to bottom,
+			color-mix(in oklab, transparent, var(--pattern-grid) 100%) 1px,
+			transparent 1px
+		),
+		/* dots at grid intersections */
+		radial-gradient(circle at center, var(--pattern-dots) 0, var(--pattern-dots) var(--dot-size), transparent calc(var(--dot-size) + 1px));
+	background-size:
+		var(--grid-size) 100%,
+		100% var(--grid-size),
+		var(--grid-size) var(--grid-size);
+	background-position:
+		0 0,
+		0 0,
+		0 0;
+	opacity: var(--pattern-opacity);
+	mix-blend-mode: screen;
+}
 .AppBelow { position:relative; z-index:10; }
