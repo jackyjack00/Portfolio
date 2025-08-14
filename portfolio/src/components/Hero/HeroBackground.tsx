@@ -51,7 +51,7 @@ const HeroBackground: React.FC = () => {
     const initParticles = () => {
       const area = width * height;
       // density tuned for visual balance and perf
-      const target = clamp(Math.floor(area * 0.00006), 36, 140);
+      const target = clamp(Math.floor(area * 0.00006), 36, 140) * 2.5; // 1.5x for more density
       const arr: Particle[] = [];
       for (let i = 0; i < target; i++) {
         const speed = 0.15 + Math.random() * 0.35; // px per frame

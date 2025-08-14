@@ -7,6 +7,11 @@
 	scroll-snap-type: y proximity; 
 	scroll-behavior:smooth; 
 	font-family: var(--font-display);
+	background:
+    	radial-gradient(60vmax 30vmax at 20% 20%, color-mix(in srgb, var(--color-pri) 30%, transparent), transparent 60%),
+    	radial-gradient(48vmax 24vmax at 80% 30%, color-mix(in srgb, var(--color-fg-light) 22%, transparent), transparent 60%),
+    	radial-gradient(40vmax 20vmax at 50% 80%, color-mix(in srgb, var(--color-pri) 20%, transparent), transparent 60%)
+
 }
 .AppRoot::before {
 	content: "";

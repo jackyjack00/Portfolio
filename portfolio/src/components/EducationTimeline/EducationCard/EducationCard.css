@@ -30,6 +30,7 @@
     opacity: .7;
     pointer-events: none;
     transition: transform .2s ease, opacity .2s ease;
+    animation: EduTimeline-CardArrow-Bounce 1.5s cubic-bezier(0.1, -0.6, 0.2, 0) infinite;
 }
 .EduTimeline-card:hover { 
     background: var(--color-fg-light);  
@@ -37,10 +38,15 @@
 }
 .EduTimeline-card:hover::after { opacity: .95; transform: translateX(-50%) translateY(1px); }
 .EduTimeline-card:focus-visible { outline:2px solid rgba(255,255,255,0.7); outline-offset:2px; }
-.EduTimeline-card[aria-expanded="true"]::after { transform: translateX(-50%) rotate(180deg); }
+.EduTimeline-card[aria-expanded="true"]::after { transform: translateX(-50%) rotate(180deg); animation:none}
 .EduTimeline-card[aria-expanded="true"]:hover::after { transform: translateX(-50%) rotate(180deg) translateY(1px); }
 .EduTimeline-cardTitle { font-size:var(--font-l); font-weight:600; margin:0 0 var(--space-xxs); }
 .EduTimeline-cardSchool { font-size:var(--font-s); margin:0 0 var(--space-xs); opacity:.8; }
 .EduTimeline-cardDetails { font-size:var(--font-m); margin:0; opacity:.9; }
 .EduTimeline-cardExtra { margin-top:var(--space-s); font-size:var(--font-m); opacity:.9; overflow:hidden; }
 .EduTimeline-divider { height:1px; width:100%; background: rgba(255,255,255,0.15); margin:var(--space-xs) 0 var(--space-s); }
+
+@keyframes EduTimeline-CardArrow-Bounce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(4px); }
+}
