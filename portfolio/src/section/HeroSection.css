@@ -1,2 +1,4 @@
-.HeroSection-root { position:relative; display:grid; place-items:center; height:100vh; }
-.HeroSection-links { position:absolute; top:var(--space-m); right:var(--space-m); }
+.HeroSection-root { position:relative; display:grid; place-items:center; height:100vh; isolation:isolate; }
+/* Keep content above background without breaking absolute elements like the links */
+.HeroSection-root > *:not(.HeroSection-bg):not(.HeroSection-links) { position:relative; z-index:var(--z-foreground); }
+.HeroSection-links { position:absolute; top:var(--space-m); right:var(--space-m); z-index:var(--z-foreground); }

@@ -1,0 +1,24 @@
+.HeroSection-bg{
+    position:absolute;
+    inset:0;
+    z-index:var(--z-middle);
+    pointer-events:none
+}
+
+.HeroSection-bg::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(1200px 600px at 20% 20%, color-mix(in srgb, var(--color-pri) 30%, transparent), transparent 60%),
+    radial-gradient(1000px 500px at 80% 30%, color-mix(in srgb, var(--color-fg-light) 22%, transparent), transparent 60%),
+    radial-gradient(800px 400px at 50% 80%, color-mix(in srgb, var(--color-pri) 20%, transparent), transparent 60%)
+}
+
+.HeroSection-bgCanvas{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    filter:drop-shadow(0 0 12px rgba(0,0,0,.2)) saturate(110%);
+}
