@@ -11,7 +11,7 @@
   --color-fg-dark: hsl(from var(--color-fg) h s calc( l - 20) ); 
   --color-fg-light: hsl(from var(--color-fg) h s calc( l + 20) );   
 
-  --color-pri: hsl(from var(--color-fg) h s calc( l + 40) );        
+  --color-pri: hsl(from var(--color-fg) calc( h - 60 ) calc(s + 50) calc( l + 60) );        
   --color-pri-hov: hsl( from var(--color-pri) h calc(s - 10) l );
 
   --color-text: hsl( from var(--color-bg) h 50% 90% );     

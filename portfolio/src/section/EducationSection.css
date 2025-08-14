@@ -1,4 +1,12 @@
 .EduTimeline-section { position: relative; padding: 6rem var(--space-l); }
 .EduTimeline-inner { margin: 0 auto; max-width: 72rem; }
-.EduTimeline-heading { font-size: clamp(1.75rem, 2.5vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; }
-.EduTimeline-subhead { margin-top: var(--space-s); font-size: var(--font-s); opacity: .8; }
+.EduTimeline-heading { font-size: clamp(4rem, 2.5vw, 2.25rem); font-weight: 600; letter-spacing: -0.02em; }
+.EduTimeline-subhead { margin-top: var(--space-s); font-size: var(--font-l); opacity: .8; }
+
+.EduTimeline-subhead h3 { color: var(--color-pri); }
+.EduTimeline-subhead strong { color: var(--color-pri); }
+
+@media (max-width: 768px) {
+  .EduTimeline-heading { font-size: clamp(3rem, 2.5vw, 1.75rem); }
+  .EduTimeline-subhead { font-size: var(--font-m); }
+}

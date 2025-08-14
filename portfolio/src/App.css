@@ -6,6 +6,7 @@
 	color:var(--color-head);
 	scroll-snap-type: y proximity; 
 	scroll-behavior:smooth; 
+	font-family: var(--font-display);
 }
 .AppRoot::before {
 	content: "";
