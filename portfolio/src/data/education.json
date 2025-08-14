@@ -4,7 +4,7 @@
     "title": "Diploma Liceo Scientifico",
     "school": "Liceo Scientifico Galileo Ferraris",
     "details": "Solide basi in materie scientifiche e umanistiche.",
-    "extra": "**Competenze principali:**\n\n- Fisica\n- Matematica\n- Esperienze di laboratorio\n- Inglese (**Certificazione B2**)\n\n**Esperienze Extracurricolari:**\n- Club di Programmazione e Robotica\n- Stage di laboratorio presso **INRiM** (Istituto Nazionale di Ricerca Metrologica).\n- Analisi dati di telescopi per rilevamento di muoni"
+    "extra": "### **Competenze principali:**\n\n- Fisica\n- Matematica\n- Esperienze di laboratorio\n- Inglese (**Certificazione B2**)\n\n### **Esperienze Extracurricolari:**\n- Club di Programmazione e Robotica\n- Stage di laboratorio presso **INRiM** (Istituto Nazionale di Ricerca Metrologica).\n- Analisi dati di telescopi per rilevamento di muoni"
   },
   {
     "range": "_2019 – 2022_",
@@ -17,14 +17,14 @@
     "range": "_2022 – 2024_",
     "title": "University Research Group",
     "school": "MALTO: Machine Learning at PoliTo",
-    "details": "Focus su ricerca e partecipazione a challenge europee in ambito AI",
-    "extra": "Progetto finale su RAG.\n\n| Modulo | Stack |\n| ------ | ----- |\n| NLP | Python, Transformers |\n| MLOps | Docker, FastAPI |\n\nPipeline con steps: `ingest` → `embed` → `retrieve` → `evaluate`.\n\nLista rapida:\n- Dataset pulizia\n- Fine-tuning leggero\n- Benchmark interno"
+    "details": "Ricerca su intelligenza artificiale, con focus sulla partecipazione a challenge europee.",
+    "extra": "### Progetti principali\n- **Fine-tuning con dati sintetici**\n\t- _Generazione e utilizzo di dati sintetici per arricchire dataset limitati; studio delle strategie ottimali di integrazione nel ciclo di training_\n\n- **Hallucination detection**\n\t- _Analisi delle allucinazioni nei modelli linguistici generativi (LLM)_\n\n- **Time series analysis**\n\t- _Anomaly detection e stima del time-to-failure in dati sequenziali_\n\n### Challenges\n- SemEval 2024 – SHROOM\n- CML PKDD 2024 – Volvo Discovery Challenge (**3rd place**)"
   },
   {
     "range": "_2022 – 2024_",
     "title": "Magistrale in Data Science & Artificial Intelligence",
     "school": "Istituto / Università",
     "details": "Focus su AI/ML, sistemi distribuiti e data-intensive apps.",
-    "extra": "1. Deep Learning\n2. NLP\n3. Sistemi distribuiti\n\n![Placeholder](https://via.placeholder.com/150)\n\n**Outcome:** prototipo di valutazione automatica con metriche personalizzate (es. *semantic similarity*).\n\nUlteriore codice:\n```js\nconst msg = 'Hello MD';\nconsole.log(msg);\n```"
+    "extra": "### Esami Chiave\n- Data Science and Visualization\n\t- _**Pandas, Numpy, Scikit-learn**_\n- Machine Learning\n\t- _**Decision Trees, Random Forest, SVM, Clustering, Classification**_\n- Deep Learning\n\t- _**Neural Networks, CNNs, Transformers**_\n- Natural Language Processing\n\t- _**NLTK, SpaCy, Transformers, Hugging Face**_\n### Progetti\n- Modifica architetturale e finetuning tramite Masked Language Modeling di un modello BERT-like su domini e lingue differenti\n\n- Architettura CNN allenata tramite Contrastive Learning per Visual Place Recognition\n\n- Modifica architetturale di un Transformer per l'analisi di sequenze temporali di agenti inquinanti per il forcasting degli stessi sull'area geografica di Milano"
   }
 ]
